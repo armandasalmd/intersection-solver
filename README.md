@@ -10,32 +10,20 @@ P.S. KET is a lithuanian transilation.
 
 ### What have I learned?
 
-* Use stackoverflow
-* Android studio tricks
-* Google material design pattern
-* JSON parsing, saving to memory
+* Data binding
+* Static resources access
+* Make responsive design
 * Object oriented programming (OOP)
-* Deploy android app to Google Play
-* Build android fragment layouts
-* Find/Implement app packages/libraries
-* Multithreading
-* Use debugger mode
-* Track performance
-* Multi languages support
-* Android system Notification service
-* Test app on different emulators
-* .axml(android layout) file language 
 
 ### Facts
 
-* It was created 1 year before joining university
-* First steps were made on .NET Xamarin framework, later transfered to android studio
-* App languages: multiple!
+* It was created before starting the University
+* With my current knowledge, code could be made more efficient
+* Coloring schema should be improved!
+* App and programming style language: Lithuanian!
 
-# Read more on Google Play:
-# [Redirect to Google Play](https://play.google.com/store/apps/details?id=com.armandasalmd.weeklyroutine&rdid=com.armandasalmd.weeklyroutine)
+### Sample page view
 
-### Sample view
+![image cant be found](https://i.gyazo.com/b5b35e6436e8c3f59cb50c0511588734.png)
 
-![image cant be found](https://lh3.googleusercontent.com/Mq7-wPBKMZCaEZw5i4CDSl58hSn5ZZGiYixKf6clPAxP_W5sEpbLK6Eef7jVEcCSKcw=w1920-h969-rw)
-
+![image cant be found](https://i.gyazo.com/09e943e3bef3a5859aedaa7b824b9cff.png)
