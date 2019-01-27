@@ -33,7 +33,7 @@ P.S. KET is a lithuanian transilation.
 * App languages: multiple!
 
 # Read more on Google Play:
-[Click to visit](https://play.google.com/store/apps/details?id=com.armandasalmd.weeklyroutine&rdid=com.armandasalmd.weeklyroutine)
+# [Redirect to Google Play](https://play.google.com/store/apps/details?id=com.armandasalmd.weeklyroutine&rdid=com.armandasalmd.weeklyroutine)
 
 ### Sample view
 
