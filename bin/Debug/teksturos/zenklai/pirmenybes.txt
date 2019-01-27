@@ -1,0 +1,8 @@
+Pagrindinis kelias
+Šis ženklas sako, kad jus važuojate pirmas!
+201.png
+</kitas>
+Šalutinis kelias
+Šis ženklas sako, kad jus turite praleisti kitus!
+203.png
+</pabaiga>

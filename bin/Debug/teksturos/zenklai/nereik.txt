@@ -1,0 +1,12 @@
+201 Pagrindinis kelias
+Kelias, kuriame suteikta pirmenybe vaziuoti per nereguliuojamas sankryzas
+201.png
+</kitas>
+203 Duoti kelia
+Vairuotojas privalo duoti kelia transporto priemonems, vaziuojancioms kertamu keliu
+203.png
+</kitas>
+324 Apsisukti draudziama
+Negalioja marsrutiniam transportui ir nedraudzia sukti i kaira
+324.png
+</kitas>

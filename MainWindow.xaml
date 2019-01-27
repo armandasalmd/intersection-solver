@@ -1,0 +1,385 @@
+﻿<Controls:MetroWindow x:Class="KET4.MainWindow"
+                      x:Name="window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:simpleChildWindow="clr-namespace:MahApps.Metro.SimpleChildWindow;assembly=MahApps.Metro.SimpleChildWindow"
+        xmlns:local="clr-namespace:KET4"
+        xmlns:zenklas="clr-namespace:KET4.klases"
+        WindowStartupLocation="CenterScreen"
+        RenderTransformOrigin="0.5,0.5"
+        GlowBrush="LightCoral" TitleForeground="DarkBlue"
+        MaxHeight="1000" MaxWidth="1456"
+        Title="Kelių eismo situacijų sprendėjas (KESS)" Height="1000" Width="1456" >
+    <!-- ***** virsutinis baras ***** -->
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <!-- ***** nustatymu mygtukas ***** -->
+            <Button Click="temos_click">
+                <StackPanel>
+                    <Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Height="18" Source="https://cdn4.iconfinder.com/data/icons/two-colored-flat-set/100/setting-64.png" />
+                            <TextBlock> Nustatymai</TextBlock>
+                        </StackPanel>
+                    </Label>
+                </StackPanel>
+            </Button>
+            <!-- ***** apie kurejus ***** -->
+            <Button Click="info_click">
+                <StackPanel Orientation="Horizontal">
+                    <Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678110-sign-info-128.png" />
+                            <TextBlock> Apie</TextBlock>
+                        </StackPanel>
+                    </Label>
+                </StackPanel>
+            </Button>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
+    <Grid>
+        <Grid>
+            <!-- ***** langu skirstymas i grida ***** -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="13*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*" />
+                <RowDefinition Height="32*" />
+            </Grid.RowDefinitions>
+            <!-- ***** veiksmo langas (zalias) ***** -->
+            <DockPanel Name="pagrindinis" Grid.Row="1" Background="#FFA4C182">
+                <Border BorderBrush="Gainsboro" BorderThickness="1" CornerRadius="4">
+                    <ScrollViewer Name="tempimas" IsEnabled="True" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto">
+                        <!-- *** turinys *** -->
+                        <Canvas Name="zem2" Height="1000" Width="1096">
+                            <Image Name="pav_kelias" />
+                            <Image Name="car_pasirinkimas" />
+                            <!-- *** masinos klases `kontrolas` *** -->
+                            <ItemsControl ItemsSource="{Binding Mmasinos}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <Canvas Name="zem" Height="1000" Width="1108" IsItemsHost="True"/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                            </ItemsControl>
+                        </Canvas>
+                    </ScrollViewer>
+                </Border>
+            </DockPanel>
+            <!-- ***** sprendimo dialogas ***** -->
+            <Border BorderBrush="Black" BorderThickness="2,2,1,1" CornerRadius="5">
+                <StackPanel Name="atsakymas_panel" Background="#FFC34A4A">
+                    <TextBlock Margin="10,5,10,0" FontSize="15" Name="atsakymas_label" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#FF272525">
+                        Paspauskite mygtuka norėdami išspręsti situaciją!
+                    </TextBlock>
+                    <WrapPanel>
+                        <ListBox Name="atsakymas_box" Margin="10,6" Padding="10,5" Background="#BF1BC5C5" MaxHeight="135" Width="924"
+                              ItemsSource="{Binding Asarasas}" DisplayMemberPath="Antraste" SelectionChanged="atsakymas_SelectionChanged">
+                        </ListBox>
+                        <Button Width="150" Height="40" HorizontalAlignment="Right" Margin="0,0,10,0" FontSize="15" Click="spresti_situacija_click">Spręsti situaciją</Button>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+            <!-- ***** pasirinkimu langas ***** -->
+            <Border Grid.Column="1" Grid.RowSpan="2" BorderBrush="Black" BorderThickness="1,1,2,2" CornerRadius="6">
+                <WrapPanel Name="pasirinkimai_panel" Background="#FF9961C7" >
+                    <!-- *** pasirinkimo meniu *** -->
+                    <TabControl Name="tabai" Width="340" BorderThickness="0" >
+                        <TabControl.Resources>
+                            <Style TargetType="TabItem">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="TabItem">
+                                            <Border Name="Border" BorderThickness="1,1,1,1" BorderBrush="Gainsboro" CornerRadius="5,5,1,1" Margin="2,0">
+                                                <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center"
+                                                              HorizontalAlignment="Center"  ContentSource="Header"
+                                                              Margin="10,2" />
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsSelected" Value="True">
+                                                    <Setter TargetName="Border" Property="Background" Value="Yellow" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </TabControl.Resources>
+                        <!-- tab item 1.KELIAI -->
+                        <TabItem Name="tab_item1" Background="#FF2278B4" Width="300"
+                             HorizontalAlignment="Center" FontSize="20" IsEnabled="True">
+                            <TabItem.Header>
+                                <WrapPanel PreviewMouseLeftButtonDown="WrapPanel_Perziura"
+                                       Width="120" HorizontalAlignment="Center">
+                                    <Label Content="  Keliai" FontSize="25"/>
+                                    <Image Source="https://cdn0.iconfinder.com/data/icons/flaturici-set-7/512/road-128.png" Width="25"/>
+                                </WrapPanel>
+                            </TabItem.Header>
+                            <!-- *** 1.meniu *** -->
+                            <StackPanel>
+                                <!-- *** 1.turinys *** -->
+                                <StackPanel>
+                                    <Label Name="label1" Foreground="#FFB80C0C" FontWeight="Bold" HorizontalAlignment="Center" 
+                                       Background="#FFFF8989" Padding="10,5,0,0" Width="220" Height="35" Margin="0, 12, 0, 0">
+                                        Pasirinkite kelio tipą:
+                                    </Label>
+                                    <RadioButton MouseEnter="radio1_enter" MouseLeave="radio1_leave" Click="radio1_click" Margin="10" FontSize="16">
+                                        Pliuso formos sankryža
+                                    </RadioButton>
+                                    <RadioButton MouseEnter="radio2_enter" MouseLeave="radio2_leave" Click="radio2_click" Margin="10" FontSize="16">
+                                        Raidės T formos sankryža
+                                    </RadioButton>
+                                    <StackPanel Margin="0,20,0,0">
+                                        <Label HorizontalAlignment="Center">Eismo juostų skaičius:</Label>
+                                        <Slider Minimum="1" Maximum="3" 
+                                        Name="slider_juostos"
+                                        IsEnabled="False" Width="200" 
+                                        ValueChanged="slider_Changed"
+                                        ToolTip="Pasirinkite kiek norite turėti juostų!"
+                                        TickPlacement="TopLeft" AutoToolTipPlacement="BottomRight"
+                                        IsSnapToTickEnabled="True"
+                                        Ticks="1, 2, 3"/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <!-- *** kelio pavyzdys *** -->
+                                <StackPanel HorizontalAlignment="Center" Margin="0,60,0,0">
+                                    <Label HorizontalAlignment="Center">
+                                        <Underline>Kelio pavyzdys:</Underline>
+                                    </Label>
+                                    <Image  Name="pav_pavyzdys" Width="186" Height="186" />
+                                </StackPanel>
+                            </StackPanel>
+                        </TabItem>
+                        <!-- *** tab item 2.MASINOS *** -->
+                        <TabItem Name="tab_item2" Background="#FF2278B4" Width="300"
+                             HorizontalAlignment="Center" FontSize="20" IsEnabled="False">
+                            <TabItem.Header>
+                                <WrapPanel PreviewMouseLeftButtonDown="WrapPanel_Perziura" >
+                                    <Label FontSize="25" Content=" Mašinos"/>
+                                    <Image Source="https://cdn4.iconfinder.com/data/icons/ballicons-2-new-generation-of-flat-icons/100/car-128.png" Width="25" />
+                                </WrapPanel>
+                            </TabItem.Header>
+                            <!-- *** 2.turinys *** -->
+                            <StackPanel>
+                                <TextBlock TextWrapping="Wrap" Margin="15,15,15,15" Foreground="#FF77F177" FontWeight="SemiBold" TextAlignment="Center" FontSize="19">
+                                Pasirinkite mašiną ir tada ją nutemkite ant kelio!
+                                </TextBlock>
+                                <Label HorizontalAlignment="Center" FontSize="17">
+                                    <WrapPanel>
+                                        <TextBlock Text="Mašinos spalva:" />
+                                        <Image Height="16" Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_blue.png" />
+                                        <Image Height="16" Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png" />
+                                        <Image Height="16" Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_red.png" />
+                                    </WrapPanel>
+                                </Label>
+                                <ComboBox Name="combo1" Margin="10,0,10,8" Width="200"
+                                      SelectionChanged="ComboBox_SelectionChanged_1">
+                                    <ComboBoxItem Content="juoda" />
+                                    <ComboBoxItem Content="mėlina" />
+                                    <ComboBoxItem Content="orandžinė" />
+                                    <ComboBoxItem Content="purpurinė" />
+                                    <ComboBoxItem Content="raudona" />
+                                    <ComboBoxItem Content="geltona" />
+                                </ComboBox>
+                                <Label HorizontalAlignment="Center" Margin="0,65,0,10">
+                                    <WrapPanel>
+                                        <Label Name="temptiLabel" Foreground="#FFF0E500">
+                                            <Underline>Temkite ant kelio!</Underline>
+                                        </Label>
+                                    </WrapPanel>
+                                </Label>
+                                <Image Name="pav_masina" Height="200" Width="100" 
+                                   ToolTip="Tempkite mašina ant kelio!" Cursor="Hand" AllowDrop="True" 
+                                   Focusable="True" MouseLeftButtonDown="pav_masina_MouseLeftButtonDown"
+                                   DragOver="pav_kelias_DragOver" MouseDown="pav_masina_MouseDown" />
+                                <ToggleButton Margin="0,300,0,0" Width="135" Background="#FFD66161" BorderBrush="#FFBD1717"
+                                          Name="trynti" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked">
+                                    Mašinų trynimas išjungtas
+                                </ToggleButton>
+                            </StackPanel>
+                        </TabItem>
+                        <!-- *** tab item 3.ZENKLAI *** -->
+                        <TabItem Name="tab_item3" Background="#FF2278B4" Width="300"
+                             HorizontalAlignment="Center" FontSize="20" IsEnabled="False" >
+                            <TabItem.Header>
+                                <WrapPanel>
+                                    <Label FontSize="25" Content=" Ženklai" />
+                                    <Image Source="https://cdn0.iconfinder.com/data/icons/universal-signs-symbols/128/stop-sign-hand-128.png" Width="25" />
+                                </WrapPanel>
+                            </TabItem.Header>
+                            <!-- *** 3.meniu *** -->
+                            <StackPanel Margin="10, 20">
+                                <!-- *** 3.masinu sarasas *** -->
+                                <StackPanel>
+                                    <TextBlock Margin="10" Foreground="MediumSpringGreen" HorizontalAlignment="Center">Mašinos pasirinkimas:</TextBlock>
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="200">
+                                        <StackPanel>
+                                            <ListBox Height="Auto" Name="list_of_cars" ItemsSource="{Binding Ssarasas}"  DisplayMemberPath="Antraste" SelectionChanged="list_of_cars_SelectionChanged" ></ListBox>
+                                        </StackPanel>
+                                    </ScrollViewer>
+                                </StackPanel>
+                                <!-- *** 3.posukio pasirinkimas *** -->
+                                <StackPanel Name="rbPanel" HorizontalAlignment="Center" IsEnabled="False">
+                                    <TextBlock Foreground="Yellow">Važiavimo kryptis(posūkiai):</TextBlock>
+                                    <WrapPanel HorizontalAlignment="Center" >
+                                        <RadioButton Name="rb1" GroupName="posukiai" Margin="0,4,10,0" Checked="rb1_Checked" >Kairė</RadioButton>
+                                        <RadioButton Name="rb2" GroupName="posukiai" Margin="0,4,10,0" Checked="rb2_Checked" >Tiesiai</RadioButton>
+                                        <RadioButton Name="rb3" GroupName="posukiai" Margin="0,4,10,0" Checked="rb3_Checked" >Dešinė</RadioButton>
+                                    </WrapPanel>
+                                </StackPanel>
+                                <!-- *** 3.zenklu pasirinkimas *** -->
+                                <StackPanel Name="zenklu_panel"  Margin="0,100,0,0">
+                                    <Label HorizontalAlignment="Center" FontWeight="DemiBold" Foreground="Blue">Pasirinkite ženklus:</Label>
+                                    <!-- *** Pagrindinio kelio zenklai *** -->
+                                    <Border Background="AliceBlue" BorderThickness="2" BorderBrush="LightCoral" 
+                                            MinHeight="50" MaxHeight="265" Width="304" Margin="5">
+                                        <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#FF526270">
+                                            <StackPanel>
+                                                <TextBlock Foreground="LightGreen" Margin="5,0,0,0">
+                                                    <Underline>Kelio pirmumo ženklai:</Underline>
+                                                </TextBlock>
+                                                <ItemsControl ItemsSource="{Binding Pzenklai}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel Name="zenklu_sarasas" Margin="5,0,0,0" IsItemsHost="True" />
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
+                                            </StackPanel>
+                                        </ScrollViewer>
+                                    </Border>
+                                    <!-- *** Kiti zenklai *** -->
+                                    <Border Name="zenklai_border" Background="AliceBlue" BorderThickness="2" BorderBrush="LightCoral" MinHeight="50" MaxHeight="265" Width="304">
+                                        <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#FF526270">
+                                            <StackPanel>
+                                                <TextBlock Foreground="LightGreen" Margin="5,0,0,0">
+                                                    <Underline>Kiti ženklai:</Underline>
+                                                </TextBlock>
+                                                <ItemsControl ItemsSource="{Binding Zzenklai}">
+                                                    <ItemsControl.ItemsPanel>
+                                                        <ItemsPanelTemplate>
+                                                            <WrapPanel Name="zenklu_sarasas" HorizontalAlignment="Center" IsItemsHost="True" />
+                                                        </ItemsPanelTemplate>
+                                                    </ItemsControl.ItemsPanel>
+                                                </ItemsControl>
+                                            </StackPanel>
+                                        </ScrollViewer>
+                                    </Border>
+                                </StackPanel>
+                            </StackPanel>
+                        </TabItem>
+                    </TabControl>
+                </WrapPanel>
+            </Border>
+        </Grid>
+        <!-- ********** ****************** ********** -->
+        <!-- ***** nustatymu langas ***** -->
+        <simpleChildWindow:ChildWindow x:Name="temos_window" ChildWindowWidth="500"
+                                       EnableDropShadow="True" Title="Nustatymai">
+            <Grid Margin="20" HorizontalAlignment="Center">
+                <!-- *** paskirstomas lango dydis *** -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <!-- *** pagrindinis label *** -->
+                <StackPanel Grid.Row="0" Margin="0,0,0,12" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label FontSize="20" Foreground="OrangeRed" FontWeight="Medium">
+                        <Underline>Programos nustatymai:</Underline>
+                    </Label>
+                </StackPanel>
+                <!-- *** lango dydzio keitimas *** -->
+                <WrapPanel Grid.Row="1" Margin="15,10,0,0">
+                    <TextBlock FontSize="18" Margin="10,0">Pagrindinio lango dydis:</TextBlock>
+                    <TextBox Text="{Binding Width, ElementName=window}" Width="50" />
+                    <TextBlock FontSize="16" Foreground="Green" Margin="4,0" FontWeight="Heavy">x</TextBlock>
+                    <TextBox Text="{Binding Height, ElementName=window}" Width="50" />
+                    <Button Margin="10,0,0,0" Click="atstatyti_dydi_click"> Atstatyti </Button>
+                </WrapPanel>
+                <!-- *** lango temos nustatymas *** -->
+                <WrapPanel Grid.Row="2" Margin="5,25,5,0">
+                    <TextBlock FontSize="18" Margin="10,0">Pasirinkite programos tema:</TextBlock>
+                    <ComboBox x:Name="tema_combo" SelectionChanged="tema_pasikeite" Width="100" >
+                        <ComboBoxItem Name="default">numatyta</ComboBoxItem>
+                        <ComboBoxItem>paplūdimio</ComboBoxItem>
+                        <ComboBoxItem>pastelės</ComboBoxItem>
+                        <ComboBoxItem>ledinė</ComboBoxItem>
+                        <ComboBoxItem>niuri</ComboBoxItem> 
+                        <ComboBoxItem>saldainio</ComboBoxItem>
+                    </ComboBox>
+                </WrapPanel>
+                <!-- *** pazymetos masinos koordinaciu rodymas *** -->
+                <WrapPanel Grid.Row="3" Margin="0,25,0,0">
+                    <TextBlock FontSize="18" Margin="10,0">Pažymėjimo(rėmo) koordinatės:</TextBlock>
+                    <TextBox Background="AliceBlue" Text="{Binding Path=(Canvas.Left), ElementName=car_pasirinkimas}" ></TextBox>
+                    <TextBlock FontSize="16" Foreground="Green" Margin="4,0" FontWeight="Heavy">x</TextBlock>
+                    <TextBox Background="AliceBlue" Text="{Binding Path=(Canvas.Top), ElementName=car_pasirinkimas}" ></TextBox>
+                </WrapPanel>
+                <!-- *** masinos greicio pasirinkimas *** -->
+                <WrapPanel Grid.Row="4" Margin="0,25">
+                    <TextBlock FontSize="18" Margin="0,0,10,0">Mašinos važiavimo greitis:</TextBlock>
+                    <Slider VerticalAlignment="Bottom" Minimum="1" Maximum="50" Value="10"
+                                        Name="greitis_slider" IsEnabled="True" Width="200" 
+                                        ValueChanged="greitis_changed" ToolTip="Mašinos greitis!"
+                                        AutoToolTipPlacement="BottomRight" IsSnapToTickEnabled="True"
+                                        AutoToolTipPrecision="0" />
+                </WrapPanel>
+                <!-- *** mygtukas skirtas uzdaryti nustatymu langa *** -->
+                <StackPanel Grid.Row="5">
+                    <Button HorizontalAlignment="Center" Click="uzdaryti_nustatymus" VerticalAlignment="Bottom">Uždaryti nustatymus</Button>
+                </StackPanel>
+            </Grid>
+        </simpleChildWindow:ChildWindow>
+        <!-- ***** Apie ***** -->
+        <simpleChildWindow:ChildWindow x:Name="info_window" ChildWindowWidth="550"
+                                       Background="LightGoldenrodYellow"
+                                       EnableDropShadow="True" Title="Apie kūrėjus ir programą">
+            <StackPanel HorizontalAlignment="Center" Margin="8">
+                <StackPanel Margin="20,0,20,15">
+                    <TextBlock HorizontalAlignment="Center"  FontSize="15">
+                        <Italic>Ši programa skrita padėti žmonėms išspręsti užmirštą situaciją,</Italic>
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Center"  FontSize="15">
+                        <Italic>taip pat gali būti mokomosios paskirties! </Italic>
+                    </TextBlock>
+                </StackPanel>
+                <Label HorizontalAlignment="Center" FontSize="24" FontWeight="DemiBold" Foreground="Red">
+                    <Underline>Programos kūrėjai:</Underline>
+                </Label>
+                <StackPanel>
+                    <!-- Armandas Barkauskas -->
+                    <StackPanel Margin="0,8">
+                        <TextBlock FontSize="17" HorizontalAlignment="Center" FontFamily="Verdana">Pagrindinės programos:</TextBlock>
+                        <TextBlock FontSize="22" HorizontalAlignment="Center" FontFamily="Segoe Script">
+                            <Span FontWeight="Medium" Foreground="Orange">Ar</Span><Span Foreground="Green" FontWeight="ExtraBold" FontStyle="Italic">man</Span><Span FontWeight="Heavy" Foreground="Red">das</Span>
+                            <Span Foreground="Blue">Bar</Span><Span Foreground="DarkViolet">kaus</Span><Span Foreground="DarkCyan">kas</Span>
+                        </TextBlock>
+                    </StackPanel>
+                    <!-- Matas Povilaitis -->
+                    <StackPanel Margin="0,8">
+                        <TextBlock FontSize="17" HorizontalAlignment="Center" FontFamily="Verdana">Situacijų sprendimo:</TextBlock>
+                        <TextBlock FontSize="17" HorizontalAlignment="Center" FontFamily="Blackadder ITC Regular">Matas Povilaitis</TextBlock>
+                    </StackPanel>
+                    <!-- Vytautas Stanislovaitis -->
+                    <StackPanel Margin="0,8">
+                        <TextBlock FontSize="17" HorizontalAlignment="Center" FontFamily="Verdana">Prisijungimų dalies:</TextBlock>
+                        <TextBlock FontSize="17" HorizontalAlignment="Center" FontFamily="Pristina Regular">Vytautas Stanislovaitis</TextBlock>
+                    </StackPanel>
+                    <!-- Matas Kabašinskis -->
+                    <StackPanel Margin="0,8">
+                        <TextBlock FontSize="17" HorizontalAlignment="Center" FontFamily="Verdana">KET testų programos:</TextBlock>
+                        <TextBlock FontSize="17" HorizontalAlignment="Center" FontFamily="Buxton Sketch Regular">Matas Kabašinskis</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <Button Background="Gray" Margin="10" Width="120" Click="uzdaryti_info">Uždaryti info</Button>
+            </StackPanel>
+        </simpleChildWindow:ChildWindow>
+    </Grid>
+</Controls:MetroWindow>

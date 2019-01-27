@@ -1,0 +1,138 @@
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\KET4.exe.config
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\KET4.csprojResolveAssemblyReference.cache
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\MainWindow.baml
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\MainWindow.g.cs
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\App.g.cs
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\KET4_MarkupCompile.cache
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\KET4_MarkupCompile.lref
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\KET4.exe
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\MahApps.Metro.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\MahApps.Metro.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\MahApps.Metro.xml
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.xml
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\App.baml
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\KET4.g.resources
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\KET4.Properties.Resources.resources
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\KET4.csproj.GenerateResource.Cache
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\KET4.exe
+C:\Users\Armandas\Desktop\viskas_programavimo\KET4\obj\Debug\KET4.pdb
+F:\KET4\bin\Debug\KET4.exe.config
+F:\KET4\obj\Debug\KET4.exe
+F:\KET4\obj\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\KET4\bin\Debug\KET4.exe.config
+C:\Users\Armandas\Desktop\KET4\obj\Debug\KET4.exe
+C:\Users\Armandas\Desktop\KET4\obj\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\KET4\bin\Debug\KET4.exe
+C:\Users\Armandas\Desktop\KET4\bin\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\KET4\bin\Debug\MahApps.Metro.dll
+C:\Users\Armandas\Desktop\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.dll
+C:\Users\Armandas\Desktop\KET4\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Armandas\Desktop\KET4\bin\Debug\MahApps.Metro.pdb
+C:\Users\Armandas\Desktop\KET4\bin\Debug\MahApps.Metro.xml
+C:\Users\Armandas\Desktop\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.pdb
+C:\Users\Armandas\Desktop\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.xml
+C:\Users\Armandas\Desktop\KET4\obj\Debug\KET4.csprojResolveAssemblyReference.cache
+C:\Users\Armandas\Desktop\KET4\obj\Debug\MainWindow.baml
+C:\Users\Armandas\Desktop\KET4\obj\Debug\MainWindow.g.cs
+C:\Users\Armandas\Desktop\KET4\obj\Debug\App.g.cs
+C:\Users\Armandas\Desktop\KET4\obj\Debug\KET4_MarkupCompile.cache
+C:\Users\Armandas\Desktop\KET4\obj\Debug\KET4_MarkupCompile.lref
+C:\Users\Armandas\Desktop\KET4\obj\Debug\App.baml
+C:\Users\Armandas\Desktop\KET4\obj\Debug\KET4.g.resources
+C:\Users\Armandas\Desktop\KET4\obj\Debug\KET4.Properties.Resources.resources
+C:\Users\Armandas\Desktop\KET4\obj\Debug\KET4.csproj.GenerateResource.Cache
+F:\KET4\bin\Debug\KET4.exe
+F:\KET4\bin\Debug\KET4.pdb
+F:\KET4\bin\Debug\MahApps.Metro.dll
+F:\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.dll
+F:\KET4\bin\Debug\mscorlib.dll
+F:\KET4\bin\Debug\System.Windows.Interactivity.dll
+F:\KET4\bin\Debug\MahApps.Metro.pdb
+F:\KET4\bin\Debug\MahApps.Metro.xml
+F:\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.pdb
+F:\KET4\bin\Debug\MahApps.Metro.SimpleChildWindow.xml
+F:\KET4\bin\Debug\normidna.nlp
+F:\KET4\bin\Debug\normnfc.nlp
+F:\KET4\bin\Debug\normnfd.nlp
+F:\KET4\bin\Debug\normnfkc.nlp
+F:\KET4\bin\Debug\normnfkd.nlp
+F:\KET4\obj\Debug\KET4.csprojResolveAssemblyReference.cache
+F:\KET4\obj\Debug\MainWindow.g.cs
+F:\KET4\obj\Debug\App.g.cs
+F:\KET4\obj\Debug\KET4_MarkupCompile.cache
+F:\KET4\obj\Debug\KET4_MarkupCompile.lref
+F:\KET4\obj\Debug\App.baml
+F:\KET4\obj\Debug\MainWindow.baml
+F:\KET4\obj\Debug\KET4.g.resources
+F:\KET4\obj\Debug\KET4.Properties.Resources.resources
+F:\KET4\obj\Debug\KET4.csproj.GenerateResource.Cache
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\KET4.exe.config
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\KET4.exe
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\KET4.exe
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\MahApps.Metro.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\MahApps.Metro.SimpleChildWindow.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\MahApps.Metro.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\MahApps.Metro.xml
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\MahApps.Metro.SimpleChildWindow.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\bin\Debug\MahApps.Metro.SimpleChildWindow.xml
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\KET4.csprojResolveAssemblyReference.cache
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\MainWindow.g.cs
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\App.g.cs
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\KET4_MarkupCompile.cache
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\KET4_MarkupCompile.lref
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\App.baml
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\MainWindow.baml
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\KET4.g.resources
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\KET4.Properties.Resources.resources
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 - ideja veikia\obj\Debug\KET4.csproj.GenerateResource.Cache
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\KET4.exe.config
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\KET4.exe
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\KET4.exe
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.SimpleChildWindow.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.xml
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.SimpleChildWindow.pdb
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.SimpleChildWindow.xml
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\KET4.csprojResolveAssemblyReference.cache
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\MainWindow.g.cs
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\App.g.cs
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\KET4_MarkupCompile.cache
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\KET4_MarkupCompile.lref
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\App.baml
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\MainWindow.baml
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\KET4.g.resources
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\KET4.Properties.Resources.resources
+C:\Users\Armandas\Desktop\viskas_programavimo\0.Viskas_KET\KET4 DARBAS\obj\Debug\KET4.csproj.GenerateResource.Cache
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\KET4.exe.config
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\KET4.exe
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\KET4.exe
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\KET4.pdb
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.dll
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.SimpleChildWindow.dll
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.pdb
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.xml
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.SimpleChildWindow.pdb
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\bin\Debug\MahApps.Metro.SimpleChildWindow.xml
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\KET4.csprojResolveAssemblyReference.cache
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\MainWindow.g.cs
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\App.g.cs
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\KET4_MarkupCompile.cache
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\KET4_MarkupCompile.lref
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\App.baml
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\MainWindow.baml
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\KET4.g.resources
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\KET4.Properties.Resources.resources
+C:\Users\Armandas\Desktop\Programavimas\Mokyklos\_JKM\_Viskas_KET\KET4 DARBAS\obj\Debug\KET4.csproj.GenerateResource.Cache

@@ -1,0 +1,40 @@
+204 Stop
+Draudziama vaziuoti nesustojus pries "Stop" linija. Vairuotojas privalo duoti kelia transporto priemonems, vaziuojancioms kertamu keliu
+204.png
+</kitas>
+301 Ivaziuoti draudziama
+Draudziama ivaziuoti visoms transporto priemonems, isskyrus marsrutini transporta
+301.png
+</kitas>
+322 Sukti i desine draudziama
+Galioja toje vaziuojamuju daliu sankirtoje, pries kuria jie pastatyti. Negalioja marsrutiniam transportui
+322.png
+</kitas>
+323 Sukti i kaire draudziama
+Galioja toje vaziuojamuju daliu sankirtoje, pries kuria jie pastatyti. Negalioja marsrutiniam transportui
+323.png
+</kitas>
+401 Vaziuoti tiesiai
+Leidþiama vaþiuoti tik nurodyta kryptimi.
+401.png
+</kitas>
+402 Vaziuoti i desšine
+Leidþiama vaþiuoti tik nurodyta kryptimi.
+402.png
+</kitas>
+403 Vaziuoti tiesiai ir i desine.
+Leidþiama vaþiuoti tik nurodyta kryptimi.
+403.png
+</kitas>
+404 Vaziuoti tiesiai ir i desine
+Leidþiama vaþiuoti tik nurodyta kryptimi.
+404.png
+</kitas>
+405 Vaziuoti tiesiai ir i kaire.
+Leidþiama vaþiuoti tik nurodyta kryptimi.
+405.png
+</kitas>
+406 Vaziuoti tik i desine ir kaire
+Leidþiama vaþiuoti tik nurodyta kryptimi.
+406.png
+</pabaiga>
