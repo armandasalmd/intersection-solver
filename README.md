@@ -18,7 +18,8 @@ P.S. KET is a lithuanian transilation.
 ### Facts
 
 * It was created before starting the University
-* With my current knowledge code can be made more efficient
+* With my current knowledge, code could be made more efficient
+* Coloring schema should be improved!
 * App and programming style language: Lithuanian!
 
 ### Sample page view
